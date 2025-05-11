@@ -1,0 +1,16 @@
+<div>
+    <h1><%= title %></h1>
+    <p><%= message %></p>
+
+
+
+    <img src="/images/site/error.svg" alt="This site cant be access error image" class="errorPageImage">
+
+    <div>
+        <% if (status == 404) { %>
+    <img src="/images/site/404_page.webp" alt="This is a 404 error page showing a broken down robot with the words 'error' and '404'." class="errorPageImage">
+            <% } else { %> 
+    <img src="/images/site/500-error.webp" alt="This is a 500 error page showing a broken down robot with the words 'Oops!' and 'error'." class="errorPageImage">
+    <%  } %>    
+    </div>
+</div>
